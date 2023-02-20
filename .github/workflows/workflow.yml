@@ -28,7 +28,6 @@ jobs:
       - name: Build and push to dockerhub
         id: build-and-push
         uses: docker/build-push-action@v3.1.1
-        if: ${{ github.ref == 'refs/head/feat/upgrade' }}
         with:
           context: .
           push: true
